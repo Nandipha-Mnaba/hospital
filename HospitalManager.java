@@ -1,18 +1,20 @@
-import java.util.Scanner;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.hospitalmanager;
 
+import java.util.Scanner;
+
 /**
- *
- * @author emeris
+ 
  */
 public class HospitalManager {
- private static HospitalSystem system = new HospitalSystem();
+    private static HospitalSystem system = new HospitalSystem();
     private static Scanner scanner = new Scanner(System.in);
- 
+
+    
+
+
     public static void main(String[] args) {
         boolean running = true;
         while (running) {

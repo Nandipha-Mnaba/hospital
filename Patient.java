@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.hospitalmanager;
 
 /**
@@ -9,18 +5,15 @@ package com.mycompany.hospitalmanager;
  * @author emeris
  */
 public class Patient {
-private String patientId;
-private String firstname ;
-private String lastname;
-private int age;
-private String geneder;
-private String medicalCondition;
-private PatientCatergory category;
+    private String patientId;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String gender;
+    private String medicalCondition;
+    private PatientCategory category;
 
-
-
-}
- public Patient(String patientId, String firstName, String lastName, int age,
+    public Patient(String patientId, String firstName, String lastName, int age,
                     String gender, String medicalCondition, PatientCategory category) {
         this.patientId = patientId;
         this.firstName = firstName;
@@ -30,9 +23,9 @@ private PatientCatergory category;
         this.medicalCondition = medicalCondition;
         this.category = category;
     }
- 
-    // ---------- Getters and Setters (Encapsulation) ----------
- 
+
+    // ... rest of your getters/setters/displayDetails/toString stay exactly as you have them
+    
     public String getPatientId() {
         return patientId;
     }
@@ -76,7 +69,8 @@ private PatientCatergory category;
     public String getMedicalCondition() {
         return medicalCondition;
     }
- public void setMedicalCondition(String medicalCondition) {
+ 
+    public void setMedicalCondition(String medicalCondition) {
         this.medicalCondition = medicalCondition;
     }
  
@@ -107,3 +101,4 @@ private PatientCatergory category;
         return patientId + " - " + firstName + " " + lastName + " (" + category + ")";
     }
 }
+ 
